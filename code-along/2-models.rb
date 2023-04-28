@@ -33,12 +33,19 @@ puts "There are #{Company.all.count} companies in the table."
 # 2. insert new rows in companies table
 
 # 3. query companies table to find all row with California company
-ca_companies = Company.where({"state" => "CA"})
-puts ca_companies.inspect
+# ca_companies = Company.where({"state" => "CA"})
+# puts ca_companies.inspect
 
 # 4. query companies table to find single row for Apple
+# apple = Company.find_by({"name" => "Apple"})
+# puts apple.inspect
 
+twitter = Company.new
+twitter["name"] = "Twitter, Inc"
+twitter.save
 # 5. read a row's column value
+
+
 
 # 6. update a row's column value
 
