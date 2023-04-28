@@ -20,6 +20,10 @@ Salesperson.destroy_all
 # 1b. check out the model file
 
 # 2. insert 1-2 rows in salespeople table.
+salesperson_1 = Salespeople.new
+salesperson_1["First Name"] = "Bei"
+salesperson_1["Last Name"] = "Dai"
+salesperson_1["Email"] = "bei.dai@company.com"
 
 # 3. write code to display how many salespeople rows are in the database
 
